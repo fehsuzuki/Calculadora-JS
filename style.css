@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: "Ubuntu", sans-serif;
+}
+
+:root {
+    --color-green: #16a34a;
+    --color-grey: #5c5c5c;
+    --color-grey-light: #d1d1d1;
+    --color-background-dark: #202020;
+    --color-black: #000;
+    --color-white: #fff;
+    --border-radius: 5px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-background-dark);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 500px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    justify-content: space-between;
+    color: var(--color-white);
+}
+
+.toggle-div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.toggle-btn {
+    min-width: 50px;
+    height: 25px;
+    background-color: var(--color-grey);
+    cursor: pointer;
+    position: relative;
+    border-radius: var(--border-radius);
+}
+
+.toggle-btn::before {
+    content: '';
+    position: absolute;
+    background: var(--color-green);
+    width: 20px;
+    top: 2px;
+    bottom: 2px;
+    left: 2px;
+    border-radius: 25%;
+    transition: .3s all ease;
+}
+
+#toggleBtn:checked+.toggle-btn::before{
+    left: calc(100% - 22px);
+}
+
+.bx-adjust {
+    font-size: 25px;
+}
+
+.text-input {
+    margin-top: 30px;
+    background-color: transparent;
+    border: 1px solid var(--color-white);
+    border-radius: var(--border-radius);
+    outline: none;
+    height: 50px;
+    padding: 10px;
+    font-size: 30px;
+    caret-color: var(--color-white);
+    color: var(--color-white);
+}
+
+.grid-buttons {
+    margin-top: 30px;
+    display: grid;
+    grid-template-areas: 
+    'clear leftParenthese rightParenthese bar'
+    'seven eight nine multiply'
+    'four five six minus'
+    'one two three plus'
+    'zero dot mod equal';
+    gap: 15px;
+}
+
+.grid-buttons > button {
+    font-size: 25px;
+    padding: 10px;
+    background-color: var(--color-green);
+    border: none;
+    border-radius: var(--border-radius);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#btnClear {
+    grid-area: clear;
+}
+
+#btnLeftParenthese {
+    grid-area: leftParenthese;
+}
+
+#btnRightParenthese {
+    grid-area: rightParenthese;
+}
+
+#btnBar {
+    grid-area: bar;
+}
+
+#btnSeven {
+    grid-area: seven;
+}
+
+#btnEight {
+    grid-area: eight;
+}
+
+#btnNine {
+    grid-area: nine;
+}
+
+#btnMultiply {
+    grid-area: multiply;
+}
+
+#btnFour {
+    grid-area: four;
+}
+
+#btnFive {
+    grid-area: five;
+}
+
+#btnSix {
+    grid-area: six;
+}
+
+#btnMinus {
+    grid-area: minus;
+}
+
+#btnOne {
+    grid-area: one;
+}
+
+#btnTwo {
+    grid-area: two;
+}
+
+#btnThree {
+    grid-area: three;
+}
+
+#btnPlus {
+    grid-area: plus;
+}
+
+#btnZero {
+    grid-area: zero;
+}
+
+#btnDot {
+    grid-area: dot;
+}
+
+#btnMod {
+    grid-area: mod;
+}
+
+#btnEqual {
+    grid-area: equal;
+}
+
+.copy-input {
+    display: flex;
+    margin-top: 30px;
+    height: 60px;
+}
+
+.copy-input button {
+    width: 100px;
+    background-color: transparent;
+    border: 1px solid var(--color-white);
+    outline: none;
+    font-size: 18px;
+    color: var(--color-white);
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+    cursor: pointer;
+}
+
+.copy-input input {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid var(--color-white);
+    outline: none;
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+}
+
+.light-theme-header {
+    color: var(--color-black);
+}
+
+.light-theme-toggle-label {
+    background-color: var(--color-grey-light);
+}
+
+.light-theme-background {
+    background-color: var(--color-white);
+}
+
+.light-theme-input-border {
+    border-color: var(--color-black);
+    caret-color: var(--color-black);
+    color: var(--color-black);
+}
+
+.light-theme-button-text {
+    color: var(--color-white);
+}
+
+.light-theme-btn-border {
+    border-color: var(--color-black);
+    color: var(--color-black);
+}

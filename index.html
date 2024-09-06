@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora JS</title>
+</head>
+<body>
+    <main class="container">
+        <div class="header">
+            <h1 id>Calc JS</h1>
+            <div class="toggle-div">
+                <input type="checkbox" id="toggleBtn" hidden>
+                <label for="toggleBtn" class="toggle-btn"></label>
+                <i class='bx bx-adjust'></i>
+            </div>
+        </div>
+        <input type="text" id="inputText" class="text-input">
+        <div class="grid-buttons">
+            <button id="btnClear">C</button>
+            <button id="btnLeftParenthese">(</button>
+            <button id="btnRightParenthese">)</button>
+            <button id="btnBar">/</button>
+            <button id="btnMultiply">*</button>
+            <button id="btnMinus">-</button>
+            <button id="btnPlus">+</button>
+            <button id="btnEqual">=</button>
+            <button id="btnOne">1</button>
+            <button id="btnTwo">2</button>
+            <button id="btnThree">3</button>
+            <button id="btnFour">4</button>
+            <button id="btnFive">5</button>
+            <button id="btnSix">6</button>
+            <button id="btnSeven">7</button>
+            <button id="btnEight">8</button>
+            <button id="btnNine">9</button>
+            <button id="btnZero">0</button>
+            <button id="btnDot">.</button>
+            <button id="btnMod">mod</button>
+        </div>
+        <div class="copy-input">
+            <button id="btnCopy">Copy</button>
+            <input id="copyInput" type="text" disabled>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
