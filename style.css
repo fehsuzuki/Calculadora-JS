@@ -86,6 +86,7 @@ body {
     font-size: 30px;
     caret-color: var(--color-white);
     color: var(--color-white);
+    text-align: end;
 }
 
 .grid-buttons {
@@ -96,7 +97,7 @@ body {
     'seven eight nine multiply'
     'four five six minus'
     'one two three plus'
-    'zero dot mod equal';
+    'zero dot mod calculate';
     gap: 15px;
 }
 
@@ -106,6 +107,7 @@ body {
     background-color: var(--color-green);
     border: none;
     border-radius: var(--border-radius);
+    color: var(--color-black);
     font-weight: bold;
     cursor: pointer;
 }
@@ -186,8 +188,8 @@ body {
     grid-area: mod;
 }
 
-#btnEqual {
-    grid-area: equal;
+#btnCalculate {
+    grid-area: calculate;
 }
 
 .copy-input {
@@ -201,7 +203,7 @@ body {
     background-color: transparent;
     border: 1px solid var(--color-white);
     outline: none;
-    font-size: 18px;
+    font-size: 25px;
     color: var(--color-white);
     border-radius: var(--border-radius) 0 0 var(--border-radius);
     cursor: pointer;
@@ -213,31 +215,8 @@ body {
     border: 1px solid var(--color-white);
     outline: none;
     border-radius: 0 var(--border-radius) var(--border-radius) 0;
-}
-
-.light-theme-header {
-    color: var(--color-black);
-}
-
-.light-theme-toggle-label {
-    background-color: var(--color-grey-light);
-}
-
-.light-theme-background {
-    background-color: var(--color-white);
-}
-
-.light-theme-input-border {
-    border-color: var(--color-black);
-    caret-color: var(--color-black);
-    color: var(--color-black);
-}
-
-.light-theme-button-text {
+    font-size: 30px;
+    text-align: end;
+    padding: 10px;
     color: var(--color-white);
-}
-
-.light-theme-btn-border {
-    border-color: var(--color-black);
-    color: var(--color-black);
 }

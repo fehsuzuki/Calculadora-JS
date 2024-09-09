@@ -8,7 +8,7 @@
     <title>Calculadora JS</title>
 </head>
 <body>
-    <main class="container">
+    <main class="container" data-theme="dark">
         <div class="header">
             <h1 id>Calc JS</h1>
             <div class="toggle-div">
@@ -19,30 +19,32 @@
         </div>
         <input type="text" id="inputText" class="text-input">
         <div class="grid-buttons">
-            <button id="btnClear">C</button>
-            <button id="btnLeftParenthese">(</button>
-            <button id="btnRightParenthese">)</button>
-            <button id="btnBar">/</button>
-            <button id="btnMultiply">*</button>
-            <button id="btnMinus">-</button>
-            <button id="btnPlus">+</button>
-            <button id="btnEqual">=</button>
-            <button id="btnOne">1</button>
-            <button id="btnTwo">2</button>
-            <button id="btnThree">3</button>
-            <button id="btnFour">4</button>
-            <button id="btnFive">5</button>
-            <button id="btnSix">6</button>
-            <button id="btnSeven">7</button>
-            <button id="btnEight">8</button>
-            <button id="btnNine">9</button>
-            <button id="btnZero">0</button>
-            <button id="btnDot">.</button>
-            <button id="btnMod">mod</button>
+            <button class="charKey" id="btnClear">C</button>
+            <button class="charKey" data-value="(" id="btnLeftParenthese">(</button>
+            <button class="charKey" data-value=")" id="btnRightParenthese">)</button>
+            <button class="charKey" data-value=" / " id="btnBar">/</button>
+            <button class="charKey" data-value=" * " id="btnMultiply">*</button>
+            <button class="charKey" data-value=" - " id="btnMinus">-</button>
+            <button class="charKey" data-value=" + " id="btnPlus">+</button>
+            <button class="charKey" id="btnCalculate">=</button>
+            <button class="charKey" data-value="1" id="btnOne">1</button>
+            <button class="charKey" data-value="2" id="btnTwo">2</button>
+            <button class="charKey" data-value="3" id="btnThree">3</button>
+            <button class="charKey" data-value="4" id="btnFour">4</button>
+            <button class="charKey" data-value="5" id="btnFive">5</button>
+            <button class="charKey" data-value="6" id="btnSix">6</button>
+            <button class="charKey" data-value="7" id="btnSeven">7</button>
+            <button class="charKey" data-value="8" id="btnEight">8</button>
+            <button class="charKey" data-value="9" id="btnNine">9</button>
+            <button class="charKey" data-value="0" id="btnZero">0</button>
+            <button class="charKey" data-value="." id="btnDot">.</button>
+            <button class="charKey" data-value="%" id="btnMod">mod</button>
         </div>
         <div class="copy-input">
-            <button id="btnCopy">Copy</button>
-            <input id="copyInput" type="text" disabled>
+            <button id="btnCopy">
+                <i class='bx bx-copy' id="copyIcon"></i>
+            </button>
+            <input id="resultInput" type="text" disabled>
         </div>
     </main>
 
